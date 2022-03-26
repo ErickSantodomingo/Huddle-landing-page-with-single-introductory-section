@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --softMagenta: hsl(300, 69%, 71%);
+  --fontBody: "Open Sans";
+  --fontHeading: "Poppins";
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./images/bg-desktop.svg);
+  background-color: var(--violet);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  width: 80%;
+  margin: 5rem auto;
+}
+#hero {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+#hero img {
+  margin: 0 3rem 0 0;
+}
+.text {
+  color: #fff;
+}
+.text h1 {
+  font-family: var(--fontHeading);
+  font-size: 3rem;
+  font-weight: 600;
+  max-width: 20ch;
+  margin: 2rem 0 2rem 0;
+}
+.text p {
+  font-family: var(--fontBody);
+  font-size: 1.2rem;
+  max-width: 49ch;
+  margin: 0 0 2rem 0;
+}
+.cta {
+  background-color: #fff;
+  color: var(--violet);
+  text-decoration: none;
+  font-family: var(--fontBody);
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  transition: 0.2s;
+}
+footer {
+  width: 80%;
+  margin: 5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.socialMedia ion-icon {
+  padding: 0.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 1rem 0 0;
+  border: #fff solid 0.1rem;
+  border-radius: 15rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.socialMedia {
+  margin: 0 12rem 0 0;
+}
+/*HOVER STYLES*/
+.cta:hover {
+  background-color: var(--softMagenta);
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.socialMedia ion-icon:hover {
+  color: var(--softMagenta);
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  margin: 0 1rem 0 0;
+  border: var(--softMagenta) solid 0.1rem;
+  border-radius: 15rem;
+}
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 600px) {
+  header {
+    margin: 0 0 2rem 0;
+  }
+  #hero {
+    flex-direction: column;
+  }
+  .text h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+  }
+  .text p {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .cta {
+    text-align: center;
+  }
+}
